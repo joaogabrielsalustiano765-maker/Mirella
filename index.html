@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Você — Com Orgulho</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="web-icon">✦</span>
+      <span>Homenagem</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre Ela</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#conquistas">Conquistas</a></li>
+      <li><a href="#conexao">Nossa Conexão</a></li>
+      <li><a href="#mensagem">Mensagem</a></li>
+    </ul>
+    <!-- Botão de música -->
+    <button class="music-btn" id="musicBtn" title="Tocar música">
+      <span class="music-icon">♪</span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <canvas id="webCanvas"></canvas>
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="web-line-left"></span>
+        <span>Para a mulher mais incrível</span>
+        <span class="web-line-right"></span>
+      </div>
+
+      <!-- TROQUE o nome aqui -->
+      <h1 class="hero-name reveal-up" id="heroName">
+        <span class="name-line">Mirella</span>
+        <span class="name-line accent">Gonçalves</span>
+        
+      </h1>
+
+      <p class="hero-tagline reveal-up">
+        <span class="typing-text" id="typingText"></span><span class="cursor-blink">|</span>
+      </p>
+
+      <p class="hero-sub reveal-up">
+        Sua força, sua correria e sua luz inspiram quem está por perto.
+      </p>
+
+      <a href="#sobre" class="hero-btn reveal-up">
+        <span class="btn-text">Entrar</span>
+        <span class="btn-web">🕸</span>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ELA ===================== -->
+  <section class="sobre" id="sobre">
+    <div class="section-label reveal-left">— Quem ela é</div>
+    <div class="sobre-grid">
+
+      <div class="sobre-photo reveal-left">
+        <div class="photo-frame">
+          <div class="web-corner tl"></div>
+          <div class="web-corner tr"></div>
+          <div class="web-corner bl"></div>
+          <div class="web-corner br"></div>
+          <!-- TROQUE a imagem aqui: substitua o src pela foto dela -->
+          <img src="img/3.jpeg" alt="Foto dela" class="sobre-img" id="sobreImg" />
+          <div class="photo-glow"></div>
+        </div>
+        <div class="photo-badge">
+          <span>✦ Incrível</span>
+        </div>
+      </div>
+
+      <div class="sobre-text reveal-right">
+        <h2 class="section-title">
+          Uma mulher<br/><em>fora do comum.</em>
+        </h2>
+        <div class="divider-web"></div>
+        <p class="sobre-p">
+          Você é daquelas pessoas que correm atrás, constroem o próprio caminho
+          e ainda conseguem iluminar tudo ao redor.
+        </p>
+        <p class="sobre-p">
+          Sua dedicação com sua loja, sua evolução e sua mentalidade mostram
+          o tamanho da mulher que você é. Não é sorte — é trabalho, é garra,
+          é você.
+        </p>
+        <p class="sobre-p highlight-p">
+          Você não esperou o mundo abrir espaço.<br/>
+          Você criou o seu próprio.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Batalhadora</span>
+          <span class="tag">Dedicada</span>
+          <span class="tag">Empreendedora</span>
+          <span class="tag">Inspiradora</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section class="galeria" id="galeria">
+    <div class="section-header reveal-up">
+      <div class="section-label">— Momentos</div>
+      <h2 class="section-title">Galeria <em>dela</em></h2>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- TROQUE os src pelas fotos dela — são 6 slots -->
+      <div class="gallery-card reveal-up" style="--delay:0.1s">
+        <div class="card-inner">
+          <img src="img/1.jpeg" alt="Foto 1" />
+          <div class="card-overlay">
+            <span class="card-icon">✦</span>
+          </div>
+        </div>
+        <div class="card-web-detail"></div>
+      </div>
+
+      <div class="gallery-card reveal-up tall" style="--delay:0.2s">
+        <div class="card-inner">
+          <img src="img/2.jpeg" alt="Foto 2" />
+          <div class="card-overlay">
+            <span class="card-icon">✦</span>
+          </div>
+        </div>
+        <div class="card-web-detail"></div>
+      </div>
+
+      <div class="gallery-card reveal-up" style="--delay:0.3s">
+        <div class="card-inner">
+          <img src="img/4.jpeg" alt="Foto 3" />
+          <div class="card-overlay">
+            <span class="card-icon">✦</span>
+          </div>
+        </div>
+        <div class="card-web-detail"></div>
+      </div>
+
+
+      <div class="gallery-card reveal-up" style="--delay:0.6s">
+        <div class="card-inner">
+          <img src="img/7.jpeg" alt="Foto 6" />
+          <div class="card-overlay">
+            <span class="card-icon">✦</span>
+          </div>
+        </div>
+        <div class="card-web-detail"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONQUISTAS ===================== -->
+  <section class="conquistas" id="conquistas">
+    <div class="section-header reveal-up">
+      <div class="section-label">— O que ela construiu</div>
+      <h2 class="section-title">Suas <em>conquistas</em></h2>
+    </div>
+
+    <div class="conquistas-grid">
+
+      <div class="conquista-card reveal-up" style="--delay:0.1s">
+        <div class="conquista-icon">🏪</div>
+        <div class="conquista-web-bg"></div>
+        <h3>Loja em ascensão</h3>
+        <p>Construiu do zero um negócio que cresce a cada dia com seu esforço e visão.</p>
+        <div class="conquista-line"></div>
+      </div>
+
+      <div class="conquista-card reveal-up" style="--delay:0.2s">
+        <div class="conquista-icon">🧠</div>
+        <div class="conquista-web-bg"></div>
+        <h3>Mentalidade forte</h3>
+        <p>Não fraqueja quando bate o vento. Usa os desafios como combustível.</p>
+        <div class="conquista-line"></div>
+      </div>
+
+      <div class="conquista-card reveal-up" style="--delay:0.3s">
+        <div class="conquista-icon">⚡</div>
+        <div class="conquista-web-bg"></div>
+        <h3>Independente</h3>
+        <p>Escreveu a própria história sem esperar por permissão de ninguém.</p>
+        <div class="conquista-line"></div>
+      </div>
+
+      <div class="conquista-card reveal-up" style="--delay:0.4s">
+        <div class="conquista-icon">🎯</div>
+        <div class="conquista-web-bg"></div>
+        <h3>Corre atrás dos sonhos</h3>
+        <p>Cada meta é levada a sério. Cada sonho vira plano. Cada plano vira realidade.</p>
+        <div class="conquista-line"></div>
+      </div>
+
+      <div class="conquista-card reveal-up" style="--delay:0.5s">
+        <div class="conquista-icon">✨</div>
+        <div class="conquista-web-bg"></div>
+        <h3>Inspira pessoas</h3>
+        <p>Sem querer, a forma como vive motiva quem está ao redor.</p>
+        <div class="conquista-line"></div>
+      </div>
+
+      <div class="conquista-card reveal-up" style="--delay:0.6s">
+        <div class="conquista-icon">👑</div>
+        <div class="conquista-web-bg"></div>
+        <h3>Beleza + inteligência</h3>
+        <p>A combinação mais rara e mais poderosa. E ela tem os dois de sobra.</p>
+        <div class="conquista-line"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== NOSSA CONEXÃO ===================== -->
+  <section class="conexao" id="conexao">
+    <div class="conexao-bg-art">
+      <canvas id="webCanvasConexao"></canvas>
+    </div>
+    <div class="conexao-content reveal-up">
+      <div class="section-label">— Uma história real</div>
+      <h2 class="section-title">Nossa <em>conexão</em></h2>
+      <div class="divider-web center"></div>
+      <blockquote class="conexao-quote">
+        "Mesmo depois de um tempo sem se falar,<br/>
+        algumas conexões continuam fortes."
+      </blockquote>
+      <p class="conexao-p">
+        Estou esperando o nosso treino de costas kkk , e um de perna também por que você amassa no treino de perna que eu sei.
+      </p>
+      <div class="conexao-icons">
+        <span class="conexao-dot active"></span>
+        <span class="conexao-line-connector">— — —</span>
+        <span class="conexao-dot active"></span>
+      </div>
+      <p class="conexao-label">Você é Demais.</p>
+    </div>
+  </section>
+
+  <!-- ===================== MENSAGEM FINAL ===================== -->
+  <section class="mensagem" id="mensagem">
+    <div class="mensagem-particles" id="mensagemParticles"></div>
+    <div class="mensagem-content reveal-up">
+      <div class="section-label light">— Do fundo do coração</div>
+
+      <div class="mensagem-quote-wrap">
+        <span class="big-quote">"</span>
+        <h2 class="mensagem-title">
+          Só queria que você soubesse que eu admiro muito você.
+        </h2>
+        <span class="big-quote close">"</span>
+      </div>
+
+      <p class="mensagem-body">
+        Tenho orgulho da sua caminhada, da sua força e da pessoa incrível que você se tornou.
+        Você merece tudo que está conquistando — e muito mais.
+      </p>
+
+      <div class="mensagem-signature">
+        <span class="sig-line"></span>
+        <span class="sig-text">Com muito carinho Joao ✦</span>
+        <span class="sig-line"></span>
+      </div>
+
+      <a href="#home" class="hero-btn mensagem-btn">
+        <span class="btn-text">Começar de novo</span>
+        <span class="btn-web">🕸</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="footer-web-art">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q300,0 600,40 Q900,80 1200,40" stroke="#c0392b22" stroke-width="1" fill="none"/>
+        <path d="M0,60 Q300,20 600,60 Q900,100 1200,60" stroke="#1a3a6622" stroke-width="1" fill="none"/>
+      </svg>
+    </div>
+    <p class="footer-text">
+      Feito com carinho por alguém que acredita muito no seu potencial. ✦
+    </p>
+    <p class="footer-sub">
+      <span class="web-icon-sm">🕸</span> Inspirado em quem não desiste.
+    </p>
+  </footer>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">↑</button>
+
+  <!-- AUDIO (silenciado por padrão) -->
+  <!-- TROQUE o src pela música desejada -->
+  <audio id="bgMusic" loop>
+    <!-- <source src="musica.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
